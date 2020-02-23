@@ -3,7 +3,7 @@
 Example
 
 ![Sample DFA](figures/ex1.jpg)
-####Update the following based on your DFA
+#### Update the following based on your DFA
 1. _table variable contains transition table symbols with the following format
 ```
         String _table = "s:a:b\n"
