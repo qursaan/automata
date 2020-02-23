@@ -13,7 +13,7 @@ import java.util.Scanner;
  */
 public class DFA {
 
-    public static boolean BuildTransitionTable(String someinput){
+    public static boolean BuildRecognizer(String someinput){
         
         String _table = "s:a:b\n"
                      +  "1:1:2\n"
@@ -78,7 +78,7 @@ public class DFA {
         
         String myinput = s.next();
         
-        System.out.println(BuildTransitionTable(myinput)?"Accepted":"Rejected");
+        System.out.println(BuildRecognizer(myinput)?"Accepted":"Rejected");
     }
     
     
