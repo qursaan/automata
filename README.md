@@ -2,8 +2,9 @@
 ### How to use
 Example
 
+![Sample DFA](figures/ex1.jpg)
 
-1. _table variable contains transition table symbols with the following formate
+1. _table variable contains transition table symbols with the following format
 ```
         String _table = "s:a:b\n"
                      +  "1:1:2\n"
