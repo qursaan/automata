@@ -38,7 +38,6 @@ public class DFA {
         }
 
         String current_state = _states [0][0];
-        int current_input = 0;
         
         System.out.println("Start State: " + current_state);
         
@@ -47,11 +46,11 @@ public class DFA {
                 
                 if(current_state.equals(_states [k][0])){
                     for(int j=0;j<m;j++) { //look for next input
-                        if(_inputs[j].equals(String.valueOf(someinput.charAt(current_input)))){
-                            System.out.println("Input: " + someinput.charAt(current_input));
+                        if(_inputs[j].equals(String.valueOf(someinput.charAt(i)))){
+                            System.out.println("Input: " + someinput.charAt(i));
                             current_state = _states [k][j];
                             System.out.println("Next State: " + current_state);
-                            current_input++;
+                            
                             break; // match current input
                         }
                     }
